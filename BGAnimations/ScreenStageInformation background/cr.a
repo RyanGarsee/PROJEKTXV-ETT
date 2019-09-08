@@ -1,0 +1,43 @@
+[BGAnimation]
+LengthSeconds=0.5
+Sound=../_swoosh.ogg
+
+[Layer1]
+File=../../Graphics/Common fallback background.jpg
+Type=0
+Command=diffusealpha,.5
+OffCommand=diffusealpha,1
+
+[Layer2]
+File=songbackground
+Type=0
+Command=zoomtowidth,640;zoomtoheight,480;diffuse,0,0,0,1;linear,.5;diffuse,.3,.3,.3,1
+Condition=not IsCourseMode()
+OffCommand=diffuse,1,1,1,1
+
+[Layer3]
+File=songbackground
+Type=0
+Command=zoomtowidth,640;zoomtoheight,480;diffuse,0,0,0,1;linear,.5;diffuse,.3,.3,.3,1
+Condition=not IsCourseMode()
+OffCommand=diffuse,.3,.3,.3,1;linear,.4;diffuse,.3,.3,.3,0
+
+[Layer4]
+File=../../Graphics/Common fallback background.jpg
+Type=0
+Command=diffuse,0,0,0,1;linear,.3;diffuse,.3,.3,.3,1
+Condition=IsCourseMode()
+OffCommand=diffusealpha,1
+
+[Layer5]
+File=../../Graphics/Common fallback background.jpg
+Type=0
+Command=diffuse,0,0,0,1;linear,.3;diffuse,.3,.3,.3,1
+Condition=IsCourseMode()
+OffCommand=diffuse,.3,.3,.3,1;linear,.4;diffuse,.3,.3,.3,0
+
+[Layer7]
+File=right.png
+Type=0
+Command=addx,340;decelerate,.4;addx,-340
+OffCommand=accelerate,.4;addx,640;diffusealpha,0

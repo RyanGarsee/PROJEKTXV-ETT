@@ -1,0 +1,12 @@
+[BGAnimation]
+
+[Layer1]
+File=songbackground
+Type=0
+Command=zoomtowidth,640;zoomtoheight,480;diffuse,1,0,0,1
+
+[Layer2]
+File=songbackground
+Type=0
+CommandRepeatSeconds=1.5
+Command=zoomtowidth,880;zoomtoheight,660;diffuse,0,0,0,0;decelerate,1.5;zoomtowidth,640;zoomtoheight,480;diffuse,1,0,0,1

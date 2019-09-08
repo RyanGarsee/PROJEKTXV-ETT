@@ -1,0 +1,71 @@
+PROJEKTXV SM5 port changelog (beta 2 onward)
+--------------------------------------------
+[r6]
+Oh hey.
+It's been a while.
+
+If you've had a previous version of the theme, you might notice the last entry in
+the changelog has been edited. That's because I'm running Windows 7 and compiling
+StepMania to use DirectX 9, so the first complaint isn't really valid anymore.
+
+This is the first version of the theme developed under the new error reporting
+system that Kyzentun put into StepMania 5 some time after beta 3's release.
+
+* Added missing "Graphics/ScreenTextEntry header".
+* Remove really old Lua scoring thing that's no longer used.
+* Changed particle zoom implementation; thanks to Kyzentun for pointing out the problem.
+* Fixed a bug on Course select where course time would not be accurate.
+* Fixed a bug on ScreenStageInformation in Course mode.
+* Fixed a bug with ScreenGameplay TimeDisplay in Course mode.
+
+[r5]
+Okay I had to come back from the dead to do this.
+
+Just one note about this commit:
+https://code.google.com/p/stepmania/source/detail?r=6126dbc1b6a115c76a85d09c8d2028f1b67cecee&path=/Themes/_fallback/metrics.ini
+I only have the following to say. http://oi25.tinypic.com/288ay5x.jpg
+
+Alright, enough ranting, time to get to the actual changes in this version.
+* Fixed crash caused by the change of the Remove item from Options.
+* Added missing frame to bottom of ScreenEvaluation.
+* Fixed life meter swipe not being entirely covered by life meter overlay.
+
+Unless any other serious errors come up, this is probably the last update.
+
+[r4]
+* Fixed Portal item text to be more accurate to the original.
+* Sped up profile save/load time (hopefully).
+* Added effects to MusicWheel Highlight.
+* Fixed total time and BPMDisplay fonts to not have awkward clashing frames.
+* Remade ScreenSelectMusic DifficultyIcon code.
+* New LifeMeter stream design, with a scrolling texture under the colored areas.
+* New widescreen-compatible life frame graphics from k//eternal
+* Fixed player X position on gameplay.
+* Fixed the problem with pressing Start on Single course mode.
+  The only caveat is that the GainFocusCommand doesn't play on the new item.
+* Changed around Song Options menu slightly.
+* Fixed Back button icon not showing up in messages.
+* Fixed position of P1 grade on the MusicWheel.
+* (ScreenSelectMusic) Added missing shadow on time text.
+* Added PHOTwON icon to customization screen.
+* Updated MusicWheelItem Sort NormalPart to point to the right file.
+* Converted theme preferences to vyhd's new ThemePrefs system.
+* Fixed Menu Timer display.
+* Fixed Options Cursor and Underline to match the original theme.
+* Started to convert options to uppercase text.
+
+[r3]
+* Added a splash image.
+* Fixed a problem with the particles and math.random.
+* Expanded wheel items to not end abruptly.
+
+[beta 2]
+* Updated theme to work with StepMania 5 Preview 2.
+ * "ScreenEvaluation banner frame" -> "ScreenEvaluation BannerFrame"
+* Changed transitions on system options menus.
+* Fixed a small bug in Gameplay failed.
+* Changed exit item in options to fit in with the others.
+* Moved position of items on main edit menu.
++ Added code needed for machine score.
+* Simplified some lua files
+* Fixed position of genre text on ScreenStage.
